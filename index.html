@@ -11,19 +11,26 @@ let num2 = parseFloat(prompt("Enter second number : "));
 let result;
 
 const calc = () => {
-  if (operator == "+") {
+  if (operator == "+")
+   {
     result = first_number + second_number;
     alert(`${first_number} + ${second_number} = ${result}`);
-  } else if (operator == "-") {
+  } 
+  else if (operator == "-") 
+  {
     result = first_number - second_number;
     alert(`${first_number} - ${second_number} = ${result}`);
-  } else if (operator == "*") {
+  } 
+  else if (operator == "*")
+   {
     result = first_number * second_number;
     alert(`${first_number} * ${second_number} = ${result}`);
-  } else if (operator == "/") {
+  }
+   else if (operator == "/") {
     result = first_number / second_number;
     alert(`${first_number} / ${second_number} = ${result}`);
-  } else {
+  } 
+  else {
     alert("Invalid Operator");
   }
 };
