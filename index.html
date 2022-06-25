@@ -4,12 +4,31 @@
     </head>
     <body> 
         <script type="text/javascript">
-            var name= "Jamiu Rofiat";
-            var height= "5'6.";
-            var place= "Nigeria";
-            document.write(name + " is my name and my height is " + height );
-            
-            document.write("  I'm from " + place);
+            let num1 = parseFloat(prompt("Enter first number : "));
+let operator = prompt("Enter Operator (+, -, *, or /) : ");
+let num2 = parseFloat(prompt("Enter second number : "));
+
+let result;
+
+const calc = () => {
+  if (operator == "+") {
+    result = first_number + second_number;
+    alert(`${first_number} + ${second_number} = ${result}`);
+  } else if (operator == "-") {
+    result = first_number - second_number;
+    alert(`${first_number} - ${second_number} = ${result}`);
+  } else if (operator == "*") {
+    result = first_number * second_number;
+    alert(`${first_number} * ${second_number} = ${result}`);
+  } else if (operator == "/") {
+    result = first_number / second_number;
+    alert(`${first_number} / ${second_number} = ${result}`);
+  } else {
+    alert("Invalid Operator");
+  }
+};
+
+calc();
         </script>
     </body>
 </html>
